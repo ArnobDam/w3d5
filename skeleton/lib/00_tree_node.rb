@@ -52,3 +52,12 @@ class PolyTreeNode
     end
 end
 
+# [[6,3],[4,2],[2,1],[0,0]]
+# if ele.value == target.value
+#     move ele into an array
+#     while array[-1].parent != nil
+#         move array[-1].parent into array
+#     end
+#     return array
+# end
+

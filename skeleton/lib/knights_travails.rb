@@ -31,6 +31,10 @@ class KnightPathFinder
         end
         new_positions
     end
+
+    def build_move_tree
+        move_queue = new_move_positions(@root_node.value)
+    end
 end
 
 # k = KnightPathFinder.new([0,0])
