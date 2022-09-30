@@ -20,6 +20,18 @@ class KnightPathFinder
     end
 
     def new_move_positions(pos)
+        valid_positions = KnightPathFinder.valid_moves(pos)
+        new_positions = []
 
+        valid_positions.each do |position|
+            if !@considered_positions.include?(position)
+                @considered_positions << position
+                new_positions << position
+            end
+        end
+        new_positions
     end
 end
+
+# k = KnightPathFinder.new([0,0])
+# p k.new_move_positions([0,0])
