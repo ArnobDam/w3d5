@@ -20,7 +20,8 @@ class PolyTreeNode
     end
 
     def remove_child(child_node)
-
+        raise "not a child" if child_node.parent == nil
+        child_node.parent=nil
     end
 end
 
